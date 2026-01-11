@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: $bg-color;
