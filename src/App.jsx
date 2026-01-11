@@ -1,16 +1,16 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Banlance from "./components/Balance/Balance";
+import Summary from "./components/Summary/Summary";
+
 
 function App() {
   return (
     <div className="app">
       <Header />
 
-      <main className="welcome">
-        <h1>Welcome to Expense Tracker</h1>
-        <p>
-          Track your income and expenses easily and stay in control of your
-          finances.
-        </p>
+      <main className="container">
+        <Banlance />
+        <Summary />
       </main>
     </div>
   );
