@@ -1,0 +1,25 @@
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+
+  .summary-box {
+    flex: 1;
+    text-align: center;
+
+    p {
+      font-weight: bold;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .income p {
+    color: green;
+  }
+
+  .expense p {
+    color: red;
+  }
+}
