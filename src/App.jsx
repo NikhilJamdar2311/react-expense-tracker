@@ -1,19 +1,12 @@
 import Header from "./components/Header/Header";
-import Banlance from "./components/Balance/Balance";
-import Summary from "./components/Summary/Summary";
-
-
+import Dashboard from "./components/Dashboard/Dashboard";
 function App() {
-  return (
-    <div className="app">
-      <Header />
-
-      <main className="container">
-        <Banlance />
-        <Summary />
-      </main>
-    </div>
-  );
+    return (
+        <div className="app">
+            <Header />
+            <Dashboard />
+        </div>
+    );
 }
 
 export default App;
