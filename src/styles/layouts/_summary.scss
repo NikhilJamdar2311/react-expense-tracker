@@ -1,28 +1,30 @@
 .summary {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  padding: 2rem;
-  gap: 1rem;
-  border-radius: 6px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+	text-align: center;
 
-  .summary-box {
-    flex: 1;
-    text-align: center;
+	.summay-cantainer {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem;
+		gap: 1rem;
+		border-radius: 6px;
 
-    p {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-top: 0.3rem;
-    }
-  }
+		.summary-box {
+			flex: 1;
+			text-align: center;
 
-  .income p {
-    color: green;
-  }
+			p {
+				font-size: 2rem;
+				font-weight: bold;
+				margin-top: 0.3rem;
+			}
+		}
 
-  .expense p {
-    color: red;
-  }
+		.income p {
+			color: green;
+		}
+
+		.expense p {
+			color: red;
+		}
+	}
 }

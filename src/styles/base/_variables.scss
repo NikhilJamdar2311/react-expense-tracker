@@ -1,3 +1,15 @@
-$primary-color: #2c3e50;
-$bg-color: #f4f4f4;
-$text-color: #333;
+/* ===== Base Colors ===== */
+$color-primary: #3d63dd;
+$color-secondary: #bec4e3;
+
+$color-bg: #ffffff;
+$color-surface: #ffffff;
+
+$color-text-primary: #1f2937; // dark gray (better than black)
+$color-text-muted: #8b8d98;
+
+$color-border: rgba(0, 0, 0, 0.08);
+
+/* ===== Semantic Colors ===== */
+$color-income: #16a34a;
+$color-expense: #dc2626;
