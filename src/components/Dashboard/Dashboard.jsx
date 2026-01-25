@@ -14,9 +14,17 @@ function Dashboard() {
         .reduce((acc, cur) => acc + cur, 0);
     const balance = income - expense;
     return (
-        <main className="container">
-            <Balance balance={balance} />
-            <Summary income={income} expense={expense} />
+        <main className="dashboard">
+            <div className="dashboard-grid">
+                <div className="dashboard-card">
+                    <Balance balance={balance} />
+                </div>
+                <div className="dashboard-card">
+                    <Summary income={income} expense={expense} />
+                </div><div className="dashboard-card">
+                    <h3>Future Component</h3>
+                </div>
+            </div>
         </main>
     );
 }

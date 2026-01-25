@@ -1,9 +1,19 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;;
-    max-width: 400px;
-    margin: 2rem auto 0;
-    padding: 1.5rem;
-    border: 1px solid #000000;
+@use '../base/variables' as *;
+
+.dashboard {
+    flex: 1;
+  padding: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+}
+
+.dashboard-card {
+  background-color: $color-surface;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
