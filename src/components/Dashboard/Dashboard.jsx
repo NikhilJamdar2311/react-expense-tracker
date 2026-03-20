@@ -3,17 +3,37 @@ import Balance from "../Balance/Balance";
 import Summary from "../Summary/Summary";
 
 function Dashboard({ activeView }) {
-    const [transactions] = useState([
-        10000, -5000, 2000, -1000, -3000, 1500,
-    ]);
+    const data = [
+        {
+            id: 1,
+            text: "Income",
+            amount: 1000
+        },
+        {
+            id: 2,
+            text: "Expense",
+            amount: -500
+        },
+        {
+            id: 3,
+            text: "Food",
+            amount: -200
+        },
+        {
+            id: 4,
+            text: "Freelance",
+            amount: 2000
+        }
+    ]
+    const [transactions] = useState(data);
 
     const income = transactions
-        .filter((amount) => amount > 0)
-        .reduce((acc, cur) => acc + cur, 0);
+        .filter((transactions) => transactions.amount > 0)
+        .reduce((acc, transactions) => acc + transactions.amount, 0);
 
     const expense = transactions
-        .filter((amount) => amount < 0)
-        .reduce((acc, cur) => acc + Math.abs(cur), 0);
+        .filter((transactions) => transactions.amount < 0)
+        .reduce((acc, transactions) => acc + Math.abs(transactions.amount), 0);
 
     const balance = income - expense;
 
